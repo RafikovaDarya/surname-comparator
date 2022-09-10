@@ -9,7 +9,7 @@ public class Main {
         people.add(new Person("Джон", "Аррен Лорд Орлиного Гнезда", 70));
         people.add(new Person("Джон", "Сноу", 30));
         people.add(new Person("Иван", "Безродный", 40));
-        Collections.sort(people, new NumberWordsSurnameComparator());
+        Collections.sort(people, new NumberWordsSurnameComparator(4));
         System.out.println(people);
     }
 }
