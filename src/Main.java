@@ -11,9 +11,8 @@ public class Main {
         people.add(new Person("Джон", "Сноу", 14));
         people.add(new Person("Иван", "Безродный", 40));
 
-        Predicate<Person> age = (person) -> {
-            return person.getAge() < 18;
-        };
+
+        Predicate<Person> age = person -> person.getAge() < 18;
         people.removeIf(age);
         Collections.sort(people, new NumberWordsSurnameComparator(4));
         System.out.println(people);
